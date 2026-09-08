@@ -40,6 +40,14 @@ def collect(root):
                     record['notes'].append(notes)
     return sorted(records.values(), key=lambda r: (r['platform'], int(re.search(r'\d+', r['level']).group()) if re.search(r'\d+', r['level']) else 999, r['level'], int(r['number'])))
 
+def difficulty_key(name):
+    tiers = {'Unrated': 0, 'Bronze': 1, 'Silver': 2, 'Gold': 3, 'Platinum': 4, 'Diamond': 5, 'Ruby': 6}
+    if name in tiers:
+        return (tiers[name], name)
+    match = re.search(r'\d+', name)
+    return (int(match.group()) if match else 999, name)
+
+
 def level_name(platform, level):
     return f'Lv. {level}' if platform == 'Programmers' else level
 
@@ -76,7 +84,7 @@ def update(root):
         overview = [f'[← 전체 현황]({link(root / "README.md", folder)})', '', f'**{len(subset)}문제**', '',
                     '| 난이도 | 문제 수 |', '| --- | ---: |']
         difficulties = sorted((d for d in folder.iterdir() if d.is_dir()),
-                              key=lambda d: (int(re.search(r'\d+', d.name).group()) if re.search(r'\d+', d.name) else 999, d.name))
+                              key=lambda d: difficulty_key(d.name))
         for difficulty in difficulties:
             items = [r for r in subset if r['level'] == difficulty.name]
             # Refresh an existing generated page after its last solution is removed.

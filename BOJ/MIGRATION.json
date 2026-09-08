@@ -1,0 +1,1159 @@
+{
+  "metadataSource": "solved.ac public pages and indexed search results; per-problem URLs below",
+  "sourceArchiveSha256": "2f8539338e6380b5d0bb6ed402bc75cd23fe4680f3994b8897763c56cba2fbb3",
+  "count": 115,
+  "files": [
+    {
+      "problemId": 1000,
+      "title": "A+B",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1000.cpp",
+      "destination": "BOJ/Bronze/1000.A+B/A+B.cpp",
+      "sha256": "e8ac0443e8421bfdec26d66728f1d2513d02883b8cd59fe999a4d7526f698051",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1001,
+      "title": "A-B",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1001.cpp",
+      "destination": "BOJ/Bronze/1001.A-B/A-B.cpp",
+      "sha256": "2325aa2f8eb844d65347b33602968dc9177fd76094f892eea5410eb8bdd7dcb2",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1003,
+      "title": "피보나치 함수",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1003.cpp",
+      "destination": "BOJ/Silver/1003.피보나치 함수/피보나치 함수.cpp",
+      "sha256": "61d517cf46c165fc991935e2c53a445d68542fa851fbc9df9be6d5f9096cad2d",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1008,
+      "title": "A/B",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1008.cpp",
+      "destination": "BOJ/Bronze/1008.A／B/A／B.cpp",
+      "sha256": "3fca028cfe668808c553b15979572863314bc89e8269e6f9a124136097869352",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1012,
+      "title": "유기농 배추",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1012.cpp",
+      "destination": "BOJ/Silver/1012.유기농 배추/유기농 배추.cpp",
+      "sha256": "a949443054f3ef663564e3e502cc0f1574b4514c9c46cd1c612d58eba6b9ac30",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1018,
+      "title": "체스판 다시 칠하기",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1018.cpp",
+      "destination": "BOJ/Silver/1018.체스판 다시 칠하기/체스판 다시 칠하기.cpp",
+      "sha256": "25c6cc8ea1f58ab8dea1c7b706e4f08cadf2e8a07f767d9666075de1950c6ab4",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1152,
+      "title": "단어의 개수",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1152.cpp",
+      "destination": "BOJ/Bronze/1152.단어의 개수/단어의 개수.cpp",
+      "sha256": "dc98e39bfd27257e00c42907075e24a1add59b65162640763d6562819d521632",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1181,
+      "title": "단어 정렬",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1181.cpp",
+      "destination": "BOJ/Silver/1181.단어 정렬/단어 정렬.cpp",
+      "sha256": "3c746b6ec0976cb1c598447bafa52dd4d5b3acaec206afcad2f27492f8fad048",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1259,
+      "title": "팰린드롬수",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1259.cpp",
+      "destination": "BOJ/Bronze/1259.팰린드롬수/팰린드롬수.cpp",
+      "sha256": "6908f4be6806298c924c8dd16ac24f9fae1bfeaa05457c7b313b9066b86f2710",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1260,
+      "title": "DFS와 BFS",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1260.cpp",
+      "destination": "BOJ/Silver/1260.DFS와 BFS/DFS와 BFS.cpp",
+      "sha256": "4f5f6f7c3254a41002af1b9ec2b9dccba27595cb67670e5f4debf1186e3dc127",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1330,
+      "title": "두 수 비교하기",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1330.cpp",
+      "destination": "BOJ/Bronze/1330.두 수 비교하기/두 수 비교하기.cpp",
+      "sha256": "9c52efc68c3e1021c9f785495d075456a4b7c45bc1357e9c7b7d8124fdb0a6a5",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1436,
+      "title": "영화감독 숌",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1436.cpp",
+      "destination": "BOJ/Silver/1436.영화감독 숌/영화감독 숌.cpp",
+      "sha256": "779f0a6cad6f58aa14fe16e432606b3123f633e75af78ffd8120e668affaf7ee",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1463,
+      "title": "1로 만들기",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1463.cpp",
+      "destination": "BOJ/Silver/1463.1로 만들기/1로 만들기.cpp",
+      "sha256": "669550fe75fee71acbe5ae2f42b65b548e41818dc4695efb58f420fda639e023",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1541,
+      "title": "잃어버린 괄호",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1541.cpp",
+      "destination": "BOJ/Silver/1541.잃어버린 괄호/잃어버린 괄호.cpp",
+      "sha256": "d1a23e71c6d1dc13e4ce089c6b4d2ef25dae722f72697da023a26a02dc527f2e",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1546,
+      "title": "평균",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1546.cpp",
+      "destination": "BOJ/Bronze/1546.평균/평균.cpp",
+      "sha256": "d88a7329e0ccbdd3271c56e2696cdf7acf3522b70dd6aa63444f2f16c45a4e06",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1620,
+      "title": "나는야 포켓몬 마스터 이다솜",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1620.cpp",
+      "destination": "BOJ/Silver/1620.나는야 포켓몬 마스터 이다솜/나는야 포켓몬 마스터 이다솜.cpp",
+      "sha256": "6e7f312e26dccee0af8e5bf090a6c0635b20f4907389dc86680c025faf16cf8a",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1654,
+      "title": "랜선 자르기",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1654.cpp",
+      "destination": "BOJ/Silver/1654.랜선 자르기/랜선 자르기.cpp",
+      "sha256": "618e37fb5501f332cd668d509e5be08c3e0783e3b6268f1d9253d6259fcde689",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1676,
+      "title": "팩토리얼 0의 개수",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1676.cpp",
+      "destination": "BOJ/Silver/1676.팩토리얼 0의 개수/팩토리얼 0의 개수.cpp",
+      "sha256": "12b4676e8432b436e8897d3ab2c4eb54e9a3a7b61443603acd5022b82c437d0a",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1697,
+      "title": "숨바꼭질",
+      "level": 10,
+      "tier": "Silver I",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1697.cpp",
+      "destination": "BOJ/Silver/1697.숨바꼭질/숨바꼭질.cpp",
+      "sha256": "c6121439356d99794e0a342acb3d9b93999d2925441661f008c4e60dbda5a89e",
+      "verificationSource": "https://solved.ac/problems/level/10?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1764,
+      "title": "듣보잡",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1764.cpp",
+      "destination": "BOJ/Silver/1764.듣보잡/듣보잡.cpp",
+      "sha256": "2106e08830fc7987c6c3e97271da534ab3732027a8621c8dc5c8d34008f3e8e5",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1874,
+      "title": "스택 수열",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1874.cpp",
+      "destination": "BOJ/Silver/1874.스택 수열/스택 수열.cpp",
+      "sha256": "fbc5faa0c390bdfdb2b9831537dc7030da1866a92ab3f0fce70b4e5be56056dc",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1920,
+      "title": "수 찾기",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1920.cpp",
+      "destination": "BOJ/Silver/1920.수 찾기/수 찾기.cpp",
+      "sha256": "08df233efac9844166ccff99cb8c8939ced0473ab1012807b9c0732d2b9eeea2",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1927,
+      "title": "최소 힙",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1927.cpp",
+      "destination": "BOJ/Silver/1927.최소 힙/최소 힙.cpp",
+      "sha256": "e8dc05b75bc6807e1d2a6f19eae9e791bdeb36bd20794aeae2d9f61b7c359751",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1929,
+      "title": "소수 구하기",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1929.cpp",
+      "destination": "BOJ/Silver/1929.소수 구하기/소수 구하기.cpp",
+      "sha256": "3c5428417216aa83c75ce2fe6687db5fe44cd4146de971a9384ed1c9224e990c",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1931,
+      "title": "회의실 배정",
+      "level": 11,
+      "tier": "Gold V",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1931.cpp",
+      "destination": "BOJ/Gold/1931.회의실 배정/회의실 배정.cpp",
+      "sha256": "37e36f987bafd327b132c2f0c09ad06663f24bc90012b4bc8db0bac3a49bb2b3",
+      "verificationSource": "https://solved.ac/problems/level/11?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1966,
+      "title": "프린터 큐",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1966.cpp",
+      "destination": "BOJ/Silver/1966.프린터 큐/프린터 큐.cpp",
+      "sha256": "1aa39b40e382f71963c2941cac3e1ec481a10dc130f90d21e2f5f3d406c47370",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 1978,
+      "title": "소수 찾기",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(01) 1000 - 1999/1978.cpp",
+      "destination": "BOJ/Bronze/1978.소수 찾기/소수 찾기.cpp",
+      "sha256": "5ce4f9dc82a7d3a646b361380cdd6400952c1cd01f7c94b031e8b875f72ec08b",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2108,
+      "title": "통계학",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2108.cpp",
+      "destination": "BOJ/Silver/2108.통계학/통계학.cpp",
+      "sha256": "cb7c603d0edd839e690b0f3aabf54ec12c3826d9708be6de2cf5ba14e61bd52d",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2164,
+      "title": "카드2",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2164.cpp",
+      "destination": "BOJ/Silver/2164.카드2/카드2.cpp",
+      "sha256": "eaf672443381424c1433db74773fd101a0c0c02b15ac4c874864cbaca5ff4fc5",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2178,
+      "title": "미로 탐색",
+      "level": 10,
+      "tier": "Silver I",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2178.cpp",
+      "destination": "BOJ/Silver/2178.미로 탐색/미로 탐색.cpp",
+      "sha256": "3033267ea0fce6a1d7b08b74ee34d9430f7231eae04abf8bb87c6f827e9e4f1f",
+      "verificationSource": "https://solved.ac/problems/level/10?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2231,
+      "title": "분해합",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2231.cpp",
+      "destination": "BOJ/Bronze/2231.분해합/분해합.cpp",
+      "sha256": "f6cd3d75f57ea182908cda24813144ec0bc24abaa38122f294471eb7560a0d21",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2292,
+      "title": "벌집",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2292.cpp",
+      "destination": "BOJ/Bronze/2292.벌집/벌집.cpp",
+      "sha256": "1017ab32c1179431543af06c91955bff7f43d6328b1169918b487402f3617992",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2438,
+      "title": "별 찍기 - 1",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2438.cpp",
+      "destination": "BOJ/Bronze/2438.별 찍기 - 1/별 찍기 - 1.cpp",
+      "sha256": "87755f3205d36b807f318fd6585cae4c8d307bbb51a0e32b039901edc7e935b5",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2439,
+      "title": "별 찍기 - 2",
+      "level": 2,
+      "tier": "Bronze IV",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2439.cpp",
+      "destination": "BOJ/Bronze/2439.별 찍기 - 2/별 찍기 - 2.cpp",
+      "sha256": "15f064d076e1281b803ef04f20507172c8ec3009570d83ac1fff22c1bf0e5d08",
+      "verificationSource": "https://solved.ac/problems/level/2?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2475,
+      "title": "검증수",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2475.cpp",
+      "destination": "BOJ/Bronze/2475.검증수/검증수.cpp",
+      "sha256": "e7f5f366cbfbe6709e1acd6493a06c37cc0ed7a78cd92eca2f946f9ce8be25e7",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2557,
+      "title": "Hello World",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2557.cpp",
+      "destination": "BOJ/Bronze/2557.Hello World/Hello World.cpp",
+      "sha256": "5e147e8c9d72556136fe693c3844c0e1144e0fc153e34d22ee4f5415c8e1ff0a",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2562,
+      "title": "최댓값",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2562.cpp",
+      "destination": "BOJ/Bronze/2562.최댓값/최댓값.cpp",
+      "sha256": "aff22a34579890e65b551a58406242486783ade42ca0dd791b331f1fef802f89",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2577,
+      "title": "숫자의 개수",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2577.cpp",
+      "destination": "BOJ/Bronze/2577.숫자의 개수/숫자의 개수.cpp",
+      "sha256": "6256b0c6f24a77e22c236fdf257aa3cf5be3b6bafe3bbf1bd105359c5f2e4e51",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2579,
+      "title": "계단 오르기",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2579.cpp",
+      "destination": "BOJ/Silver/2579.계단 오르기/계단 오르기.cpp",
+      "sha256": "c624f01c5cf823786f0faaa0c52e8bcffadaa14227a9d3db01aad04d3a70a49d",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2606,
+      "title": "바이러스",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2606.cpp",
+      "destination": "BOJ/Silver/2606.바이러스/바이러스.cpp",
+      "sha256": "daae6502b9a3f951defed4bf71bf140a4e8000f56209e0ab32d8ebb02ffd8533",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2609,
+      "title": "최대공약수와 최소공배수",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2609.cpp",
+      "destination": "BOJ/Bronze/2609.최대공약수와 최소공배수/최대공약수와 최소공배수.cpp",
+      "sha256": "2ba320f4928097a1f45c0d6f7a0a8beff4aafd641bc2956083b51912d9180e80",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2630,
+      "title": "색종이 만들기",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2630.cpp",
+      "destination": "BOJ/Silver/2630.색종이 만들기/색종이 만들기.cpp",
+      "sha256": "86c9dd20ff560f20728e324b27646d7a818c7a97d2296c86f8fee10067435162",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2667,
+      "title": "단지번호붙이기",
+      "level": 10,
+      "tier": "Silver I",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2667.cpp",
+      "destination": "BOJ/Silver/2667.단지번호붙이기/단지번호붙이기.cpp",
+      "sha256": "2f10fec9f245878838f28f220fd74bb1ad19f123739fab3715b193ec48bba8e6",
+      "verificationSource": "https://solved.ac/problems/level/10?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2675,
+      "title": "문자열 반복",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2675.cpp",
+      "destination": "BOJ/Bronze/2675.문자열 반복/문자열 반복.cpp",
+      "sha256": "e9babcf0a058d179986a83d8d298087699691ba749ff04481edc23a489bf9c5a",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2739,
+      "title": "구구단",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2739.cpp",
+      "destination": "BOJ/Bronze/2739.구구단/구구단.cpp",
+      "sha256": "256d4d5d3022738a8e3a1bbedbe248649f5a294d50717252ebae0cc15b68bd8b",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2741,
+      "title": "N 찍기",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2741.cpp",
+      "destination": "BOJ/Bronze/2741.N 찍기/N 찍기.cpp",
+      "sha256": "86dea02267f30376d9c166b3467383e74d765e8da42f7a316d6b16cfa6e4ed72",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2751,
+      "title": "수 정렬하기 2",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2751.cpp",
+      "destination": "BOJ/Silver/2751.수 정렬하기 2/수 정렬하기 2.cpp",
+      "sha256": "38c0097ad75fad15961945349c1fad9215b99bb88430af62e66a4bd95806012a",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2753,
+      "title": "윤년",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2753.cpp",
+      "destination": "BOJ/Bronze/2753.윤년/윤년.cpp",
+      "sha256": "a67f0ad4a05db233a32029d64504d4a7fed2ce5333e334888cddfff436205f68",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2775,
+      "title": "부녀회장이 될테야",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2775.cpp",
+      "destination": "BOJ/Bronze/2775.부녀회장이 될테야/부녀회장이 될테야.cpp",
+      "sha256": "1f7c713c7396bc51f4ef8e81f659e449f177eea45cc689fb2c9a16238e9f82f4",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2798,
+      "title": "블랙잭",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2798.cpp",
+      "destination": "BOJ/Bronze/2798.블랙잭/블랙잭.cpp",
+      "sha256": "e2a9db99e257e4509df39868803769f3a304d8f65f613f4970b21131c172255c",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2805,
+      "title": "나무 자르기",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2805.cpp",
+      "destination": "BOJ/Silver/2805.나무 자르기/나무 자르기.cpp",
+      "sha256": "9af7a64c0644317077bdb5fbc25c0dabeaea3bccb16dae47082e51bf3adfd825",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2839,
+      "title": "설탕 배달",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2839.cpp",
+      "destination": "BOJ/Silver/2839.설탕 배달/설탕 배달.cpp",
+      "sha256": "4dfff9e82b8df3925d7c995d33a5ae31e609703048508bb9c8fce395946bd1ed",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2869,
+      "title": "달팽이는 올라가고 싶다",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2869.cpp",
+      "destination": "BOJ/Bronze/2869.달팽이는 올라가고 싶다/달팽이는 올라가고 싶다.cpp",
+      "sha256": "b6cdc4c019eec8d3e08dbcc0335886aab19b7d00cf2de7ac9fd76dbf1263303b",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2884,
+      "title": "알람 시계",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2884.cpp",
+      "destination": "BOJ/Bronze/2884.알람 시계/알람 시계.cpp",
+      "sha256": "977c426a71e32e6f05c3ae4117b194a7d1abe30bdce090e4e7befff5aa1875c8",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 2920,
+      "title": "음계",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(02) 2000 - 2999/2920.cpp",
+      "destination": "BOJ/Bronze/2920.음계/음계.cpp",
+      "sha256": "0a33d8837d0f90079677df8ba09b47469b0b4534d4ef5a00b937f48ba1ea8b55",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 3052,
+      "title": "나머지",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(03) 3000 - 3999/3052.cpp",
+      "destination": "BOJ/Bronze/3052.나머지/나머지.cpp",
+      "sha256": "7a821236d5c6ded0293fddb9f8e4d42a0e326b23f7bbf2327cec91861bef90b7",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 4153,
+      "title": "직각삼각형",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(04) 4000 - 4999/4153.cpp",
+      "destination": "BOJ/Bronze/4153.직각삼각형/직각삼각형.cpp",
+      "sha256": "60fe4716282c0f4ece27a8f448a77cb970692bc1fcc230389aa0738bdc0e9e3b",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 4949,
+      "title": "균형잡힌 세상",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(04) 4000 - 4999/4949.cpp",
+      "destination": "BOJ/Silver/4949.균형잡힌 세상/균형잡힌 세상.cpp",
+      "sha256": "1da9ba6e4f49b71c5c40183f3c41434e196a74890387b70696351d18cc3a1bb7",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 5032,
+      "title": "탄산 음료",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(05) 5000 - 5999/5032.cpp",
+      "destination": "BOJ/Bronze/5032.탄산 음료/탄산 음료.cpp",
+      "sha256": "6eaeeb67b73dfe59e6c72c63c9c98032c0f8a488a07a536bee5e0c8e258596bf",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=2&sort=solved"
+    },
+    {
+      "problemId": 6131,
+      "title": "완전 제곱수",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(06) 6000 - 6999/6131.cpp",
+      "destination": "BOJ/Bronze/6131.완전 제곱수/완전 제곱수.cpp",
+      "sha256": "c9ec5167009b5f2ede5966069bcf1552c1f5bb4d0735944977aad760720a5547",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=asc&page=8&sort=average_try"
+    },
+    {
+      "problemId": 7568,
+      "title": "덩치",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(07) 7000 - 7999/7568.cpp",
+      "destination": "BOJ/Silver/7568.덩치/덩치.cpp",
+      "sha256": "30c5b19943a4f0835fce6a5f65be5125faadde2b45323d24da44848e5c50b1c9",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 7569,
+      "title": "토마토",
+      "level": 11,
+      "tier": "Gold V",
+      "source": "BOJ-Practice-main/(07) 7000 - 7999/7569.cpp",
+      "destination": "BOJ/Gold/7569.토마토/토마토.cpp",
+      "sha256": "37ac4e755d0cb5e25309308d71b37cb50cadde51b7106aa1d7903585eca2b0c8",
+      "verificationSource": "https://solved.ac/problems/level/11?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 7576,
+      "title": "토마토",
+      "level": 11,
+      "tier": "Gold V",
+      "source": "BOJ-Practice-main/(07) 7000 - 7999/7576.cpp",
+      "destination": "BOJ/Gold/7576.토마토/토마토.cpp",
+      "sha256": "fcb5e77a1d322cb0e3dcd690b0b59cb26486ebe333db0223c61df5cbe5fc9ed2",
+      "verificationSource": "https://solved.ac/problems/level/11?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 8958,
+      "title": "OX퀴즈",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(08) 8000 - 8999/8958.cpp",
+      "destination": "BOJ/Bronze/8958.OX퀴즈/OX퀴즈.cpp",
+      "sha256": "7b7b2d0166ddcef58fdbd2ff086e9158795183fd8f96878297ca818b60395797",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 9012,
+      "title": "괄호",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9012.cpp",
+      "destination": "BOJ/Silver/9012.괄호/괄호.cpp",
+      "sha256": "b86a02e43362eaae36ffb969f73942a21a1d2f04fde7835dc8bea39fa3a490de",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 9095,
+      "title": "1, 2, 3 더하기",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9095.cpp",
+      "destination": "BOJ/Silver/9095.1, 2, 3 더하기/1, 2, 3 더하기.cpp",
+      "sha256": "391855e58063e42debe5591ed96373ccddb46fdb0222b477f854b41e629ed9cd",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 9375,
+      "title": "패션왕 신해빈",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9375.cpp",
+      "destination": "BOJ/Silver/9375.패션왕 신해빈/패션왕 신해빈.cpp",
+      "sha256": "92325890cf7585dcfea7237bf6afebd6deca435550e44e58339bbe5fc6d1ee58",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 9461,
+      "title": "파도반 수열",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9461.cpp",
+      "destination": "BOJ/Silver/9461.파도반 수열/파도반 수열.cpp",
+      "sha256": "ef669138afe75551baf2a431e2aba15b1121bd75cbd5f6ee9e0ef4c65a37e0eb",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 9484,
+      "title": "최대삼각형, 최소삼각형",
+      "level": 23,
+      "tier": "Diamond III",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9484.cpp",
+      "destination": "BOJ/Diamond/9484.최대삼각형, 최소삼각형/최대삼각형, 최소삼각형.cpp",
+      "sha256": "bbefc2405bf3413a0829a57d4b01036ecfc5a494310e2b42a113bb2b8e96194f",
+      "verificationSource": "https://solved.ac/problems/level/23?page=2"
+    },
+    {
+      "problemId": 9498,
+      "title": "시험 성적",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(09) 9000 - 9999/9498.cpp",
+      "destination": "BOJ/Bronze/9498.시험 성적/시험 성적.cpp",
+      "sha256": "1ee820b252cc38a100db155e3276934928c6cf1245bb240c72f584ad592be33e",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10026,
+      "title": "적록색약",
+      "level": 11,
+      "tier": "Gold V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10026.cpp",
+      "destination": "BOJ/Gold/10026.적록색약/적록색약.cpp",
+      "sha256": "c8a181755fcdfac8f7a3bf8999b755e4c716aea237c0d71f79763618d8998095",
+      "verificationSource": "https://solved.ac/problems/level/11?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10171,
+      "title": "고양이",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10171.cpp",
+      "destination": "BOJ/Bronze/10171.고양이/고양이.cpp",
+      "sha256": "96e915f339816e6e4235c3aeb29dfc94d165d931b80fd17de4a5cfb3981cc266",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10172,
+      "title": "개",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10172.cpp",
+      "destination": "BOJ/Bronze/10172.개/개.cpp",
+      "sha256": "7192089304e72b60a7b4dd4d98a47e1643c43c3f54ba8f45d2ad6a5c090e2397",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10250,
+      "title": "ACM 호텔",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10250.cpp",
+      "destination": "BOJ/Bronze/10250.ACM 호텔/ACM 호텔.cpp",
+      "sha256": "0de3c0f2db4fe1c8f957ae971965addc49cf512de7af66fe751d1a5dca24ee4b",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10773,
+      "title": "제로",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10773.cpp",
+      "destination": "BOJ/Silver/10773.제로/제로.cpp",
+      "sha256": "2393901ee225d5e1a001f4cbe82231f8360b307e1ae3dfdb0b7526f931587cd8",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10809,
+      "title": "알파벳 찾기",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10809.cpp",
+      "destination": "BOJ/Bronze/10809.알파벳 찾기/알파벳 찾기.cpp",
+      "sha256": "089d73706ddaf055544d344a60054b6b3e3d11eaa7fd59a14107f2008bb0d501",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10814,
+      "title": "나이순 정렬",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10814.cpp",
+      "destination": "BOJ/Silver/10814.나이순 정렬/나이순 정렬.cpp",
+      "sha256": "d8a8828b41926bb176d47c0d1bad7be0a405f775c5fa4a9f7a8bfe15bb41906d",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10816,
+      "title": "숫자 카드 2",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10816.cpp",
+      "destination": "BOJ/Silver/10816.숫자 카드 2/숫자 카드 2.cpp",
+      "sha256": "9a96a28213921f997b0248d41c9f17878815ef261d8a581fe70cac752dd992c9",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10818,
+      "title": "최소, 최대",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10818.cpp",
+      "destination": "BOJ/Bronze/10818.최소, 최대/최소, 최대.cpp",
+      "sha256": "84109fc7a2535839b3b56503ea820c4e7f35bcc620c1a2df88595a17fa801a80",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10828,
+      "title": "스택",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10828.cpp",
+      "destination": "BOJ/Silver/10828.스택/스택.cpp",
+      "sha256": "fa40eb99d409337b238e368d29a5f0df73bac00786e264528e2eb060be06148b",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10845,
+      "title": "큐",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10845.cpp",
+      "destination": "BOJ/Silver/10845.큐/큐.cpp",
+      "sha256": "35bfd80da9512e51c96137f298027b0582ddb4cc55545e4f3b5e0491b4c7659e",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10869,
+      "title": "사칙연산",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10869.cpp",
+      "destination": "BOJ/Bronze/10869.사칙연산/사칙연산.cpp",
+      "sha256": "d07fe1c1f0465cd78f445d7fbdc238aa36cf88cc85bb8e7e41ae1803e469406a",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10871,
+      "title": "X보다 작은 수",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10871.cpp",
+      "destination": "BOJ/Bronze/10871.X보다 작은 수/X보다 작은 수.cpp",
+      "sha256": "14f02f1c5724d70fd737ecf562e0cec92189e7ac978bc953ec570e402314efb1",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10950,
+      "title": "A+B - 3",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10950.cpp",
+      "destination": "BOJ/Bronze/10950.A+B - 3/A+B - 3.cpp",
+      "sha256": "19f8a4687545a654e6c6585972fbf05eaac266459d1d88ebaa6de30d4255b959",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10951,
+      "title": "A+B - 4",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10951.cpp",
+      "destination": "BOJ/Bronze/10951.A+B - 4/A+B - 4.cpp",
+      "sha256": "2018a0d2c34fe36650111e4bcdcd31c937ec838fdc86740e335ecdb24d0fb626",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10952,
+      "title": "A+B - 5",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10952.cpp",
+      "destination": "BOJ/Bronze/10952.A+B - 5/A+B - 5.cpp",
+      "sha256": "952f02b642011214ceaa81e72fafde306a6381ca30a89131be2c73b7ab4af22f",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10989,
+      "title": "수 정렬하기 3",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10989.cpp",
+      "destination": "BOJ/Bronze/10989.수 정렬하기 3/수 정렬하기 3.cpp",
+      "sha256": "db1c28ffdef5849f98b14d14e23b6e3c8ace956af781dd6e9c04f43e784a57ef",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 10998,
+      "title": "A×B",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(10) 10000 - 10999/10998.cpp",
+      "destination": "BOJ/Bronze/10998.A×B/A×B.cpp",
+      "sha256": "4badeb4c95bde475a7fec8f6ed3bd7eb033841d7ae6caeaea3041782c700654e",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11047,
+      "title": "동전 0",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11047.cpp",
+      "destination": "BOJ/Silver/11047.동전 0/동전 0.cpp",
+      "sha256": "7ff7a7452b16c265468c7221099fc684d56e0c1d15535d9a60af01df83fad287",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11050,
+      "title": "이항 계수 1",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11050.cpp",
+      "destination": "BOJ/Bronze/11050.이항 계수 1/이항 계수 1.cpp",
+      "sha256": "6bb7d3530863c29baac328eb809a854f7cfc35d3c96d5b9a6aac8d1c8e29140e",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11279,
+      "title": "최대 힙",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11279.cpp",
+      "destination": "BOJ/Silver/11279.최대 힙/최대 힙.cpp",
+      "sha256": "35da7ed85c251270191d79a0a612ef2b9b65dbcc3dde7ca42013de589187ab86",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11286,
+      "title": "절댓값 힙",
+      "level": 10,
+      "tier": "Silver I",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11286.cpp",
+      "destination": "BOJ/Silver/11286.절댓값 힙/절댓값 힙.cpp",
+      "sha256": "58e03dc2a2c19a0abe3022e2fe117df317c26284be037efd8237a63ed39d61a5",
+      "verificationSource": "https://solved.ac/problems/level/10?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11399,
+      "title": "ATM",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11399.cpp",
+      "destination": "BOJ/Silver/11399.ATM/ATM.cpp",
+      "sha256": "ad59c93f23ad9f6a7ea80ae24b5006307aef91f5dc73e9daaf5f7f5725b06be1",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11650,
+      "title": "좌표 정렬하기",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11650.cpp",
+      "destination": "BOJ/Silver/11650.좌표 정렬하기/좌표 정렬하기.cpp",
+      "sha256": "9b36d82702f80c4b6f9f6ad6514e0639ac0c4ee9234a21c11c4ae96a9d1fbd9c",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11654,
+      "title": "아스키 코드",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11654.cpp",
+      "destination": "BOJ/Bronze/11654.아스키 코드/아스키 코드.cpp",
+      "sha256": "c74270c400217dc57390f5d7f572361e71a76b991c0d89c827c958a4f5dcf80f",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11659,
+      "title": "구간 합 구하기 4",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11659.cpp",
+      "destination": "BOJ/Silver/11659.구간 합 구하기 4/구간 합 구하기 4.cpp",
+      "sha256": "912c31b95d20477341179cdd206fa0323ae3403729b68fa057209797c3691fd8",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11720,
+      "title": "숫자의 합",
+      "level": 2,
+      "tier": "Bronze IV",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11720.cpp",
+      "destination": "BOJ/Bronze/11720.숫자의 합/숫자의 합.cpp",
+      "sha256": "02c2c16759485c34e9c37153cd12848deba062a33923605f723d9d08501d2052",
+      "verificationSource": "https://solved.ac/problems/level/2?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11723,
+      "title": "집합",
+      "level": 6,
+      "tier": "Silver V",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11723.cpp",
+      "destination": "BOJ/Silver/11723.집합/집합.cpp",
+      "sha256": "7f03fac0cae1ce3de25a5750df5d1c8924e7881af0d015d0b136e0c8b8482487",
+      "verificationSource": "https://solved.ac/problems/level/6?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11724,
+      "title": "연결 요소의 개수",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11724.cpp",
+      "destination": "BOJ/Silver/11724.연결 요소의 개수/연결 요소의 개수.cpp",
+      "sha256": "01f0f11f76e860215abe5f1369a56204f7adaddfb3a88b2907119730c314131b",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11726,
+      "title": "2×n 타일링",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11726.cpp",
+      "destination": "BOJ/Silver/11726.2×n 타일링/2×n 타일링.cpp",
+      "sha256": "ae585532a4286882e4b309715904c4e7690ba4092793a010d13ab0cf9d36d46b",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11727,
+      "title": "2×n 타일링 2",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11727.cpp",
+      "destination": "BOJ/Silver/11727.2×n 타일링 2/2×n 타일링 2.cpp",
+      "sha256": "3da73ceb8f7f3f09f4b1f5dc4509a429329a44c8712d7697d9791f167c826873",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 11866,
+      "title": "요세푸스 문제 0",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(11) 11000 - 11999/11866.cpp",
+      "destination": "BOJ/Silver/11866.요세푸스 문제 0/요세푸스 문제 0.cpp",
+      "sha256": "0052a5f5d1ec8c3460de76bfebad57a8ea4a5b9462e5eb6d43b41fbfa0ea3de6",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 14594,
+      "title": "동방 프로젝트 (Small)",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(14) 14000 - 14999/14594.cpp",
+      "destination": "BOJ/Silver/14594.동방 프로젝트 (Small)/동방 프로젝트 (Small).cpp",
+      "sha256": "e687dd98958b9e278bb245f00fb294e746ac874e5cdb6b7cdee757b3b462a968",
+      "verificationSource": "https://solved.ac/problems/level/7?page=9"
+    },
+    {
+      "problemId": 14595,
+      "title": "동방 프로젝트 (Large)",
+      "level": 12,
+      "tier": "Gold IV",
+      "source": "BOJ-Practice-main/(14) 14000 - 14999/14595.cpp",
+      "destination": "BOJ/Gold/14595.동방 프로젝트 (Large)/동방 프로젝트 (Large).cpp",
+      "sha256": "e687dd98958b9e278bb245f00fb294e746ac874e5cdb6b7cdee757b3b462a968",
+      "verificationSource": "https://solved.ac/problems/level/12?direction=desc&page=5&sort=solved"
+    },
+    {
+      "problemId": 14626,
+      "title": "ISBN",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(14) 14000 - 14999/14626.cpp",
+      "destination": "BOJ/Bronze/14626.ISBN/ISBN.cpp",
+      "sha256": "d874c4ff4012cd8e4079f22555f0e3fa6cf6e33440225a4d5e46457b9b0bdd74",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 15829,
+      "title": "Hashing",
+      "level": 4,
+      "tier": "Bronze II",
+      "source": "BOJ-Practice-main/(15) 15000 - 15999/15829.cpp",
+      "destination": "BOJ/Bronze/15829.Hashing/Hashing.cpp",
+      "sha256": "904f212d991f4ab90180bd12150a807043ff1f3663d8b4d03342261dc1811b67",
+      "verificationSource": "https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 17219,
+      "title": "비밀번호 찾기",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(17) 17000 - 17999/17219.cpp",
+      "destination": "BOJ/Silver/17219.비밀번호 찾기/비밀번호 찾기.cpp",
+      "sha256": "8858584a2b3884688639a2c3d2a51f779e9c4e3fde1a846873a07eb367518ec6",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 17626,
+      "title": "Four Squares",
+      "level": 8,
+      "tier": "Silver III",
+      "source": "BOJ-Practice-main/(17) 17000 - 17999/17626.cpp",
+      "destination": "BOJ/Silver/17626.Four Squares/Four Squares.cpp",
+      "sha256": "b82d0d818e0c655471023fa6bdda9190d1033b1047264db628786700a1088f58",
+      "verificationSource": "https://solved.ac/problems/level/8?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 18110,
+      "title": "solved.ac",
+      "level": 7,
+      "tier": "Silver IV",
+      "source": "BOJ-Practice-main/(18) 18000 - 18999/18110.cpp",
+      "destination": "BOJ/Silver/18110.solved.ac/solved.ac.cpp",
+      "sha256": "83e01970eb37e7e47dfcb8f330ac2370264a60931c3ef653e35f9f34a9881c11",
+      "verificationSource": "https://solved.ac/problems/level/7?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 18870,
+      "title": "좌표 압축",
+      "level": 9,
+      "tier": "Silver II",
+      "source": "BOJ-Practice-main/(18) 18000 - 18999/18870.cpp",
+      "destination": "BOJ/Silver/18870.좌표 압축/좌표 압축.cpp",
+      "sha256": "4b0e7de4fe2442f3b58b8817f3a8847a2a2f20fe50f99799e5b85e532fcb4663",
+      "verificationSource": "https://solved.ac/problems/level/9?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 25083,
+      "title": "새싹",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(25) 25000 - 25999/25083.cpp",
+      "destination": "BOJ/Bronze/25083.새싹/새싹.cpp",
+      "sha256": "10afb867c7a3841d8b22b34d030e722a76006fd10cbba636c08e31495c03814a",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 27866,
+      "title": "문자와 문자열",
+      "level": 1,
+      "tier": "Bronze V",
+      "source": "BOJ-Practice-main/(27) 27000 - 27999/27866.cpp",
+      "destination": "BOJ/Bronze/27866.문자와 문자열/문자와 문자열.cpp",
+      "sha256": "48e18d086af647c6708a1498e8f0538bb11a6386a52e74f34494b53e33716771",
+      "verificationSource": "https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 28702,
+      "title": "FizzBuzz",
+      "level": 5,
+      "tier": "Bronze I",
+      "source": "BOJ-Practice-main/(28) 28000 - 28999/28702.cpp",
+      "destination": "BOJ/Bronze/28702.FizzBuzz/FizzBuzz.cpp",
+      "sha256": "a8a3ab139a50f17647e3f5e9e4834ca940321e9002d4b8a7b5dc4b77ee7c2af6",
+      "verificationSource": "https://solved.ac/problems/level/5?direction=desc&page=1&sort=solved"
+    },
+    {
+      "problemId": 30802,
+      "title": "웰컴 키트",
+      "level": 3,
+      "tier": "Bronze III",
+      "source": "BOJ-Practice-main/(30) 30000 - 30999/30802.cpp",
+      "destination": "BOJ/Bronze/30802.웰컴 키트/웰컴 키트.cpp",
+      "sha256": "78b63ca25561fed3b4762d2fc696733203593e80ccc18da41875fcfa73ece199",
+      "verificationSource": "https://solved.ac/problems/level/3?direction=desc&page=%221%22&sort=solved"
+    },
+    {
+      "problemId": 31403,
+      "title": "$A + B - C$",
+      "level": 2,
+      "tier": "Bronze IV",
+      "source": "BOJ-Practice-main/(31) 31000 - 31999/31403.cpp",
+      "destination": "BOJ/Bronze/31403.$A + B - C$/$A + B - C$.cpp",
+      "sha256": "50d66933cbe6711a841f3e6fac72399ca7f8e86e9640afb564a849bc570e50fd",
+      "verificationSource": "https://solved.ac/problems/level/2?direction=desc&page=1&sort=solved"
+    }
+  ],
+  "verificationDate": "2026-09-08",
+  "verificationNote": "검색 색인 및 조회 페이지에 표시된 제목과 난이도 기준. 실시간 API 응답이 아니며 이후 난이도 변경 가능."
+}
