@@ -3,6 +3,7 @@
 알고리즘 문제 풀이 및 학습 기록
 
 Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정을 기록합니다.
+(BOJ는 2026년 09월 08일 기준 서비스 종료 상태로서 접근이 제한됨.)
 
 - 코드와 문제별 README는 BaekjoonHub를 통해 자동으로 업로드됩니다.
   (https://github.com/BaekjoonHub/BaekjoonHub) 
