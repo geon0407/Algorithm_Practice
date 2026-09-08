@@ -30,6 +30,14 @@ jobs:
             git reset --hard origin/main
             python scripts/update_readme.py
             git add README.md
+            for platform in Programmers 프로그래머스 SWEA 백준 BOJ; do
+              if [ -d "$platform" ]; then
+                git add -- "$platform/README.md"
+                for index in "$platform"/*/README.md; do
+                  if [ -f "$index" ]; then git add -- "$index"; fi
+                done
+              fi
+            done
             if git diff --cached --quiet; then
               exit 0
             fi
