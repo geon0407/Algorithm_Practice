@@ -4,7 +4,7 @@
 
 Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정을 기록합니다.
 
-- 코드와 문제별 README는 BaekjoonHub를 통해 자동으로 업로드합니다.
+- 코드와 문제별 README는 BaekjoonHub(https://github.com/BaekjoonHub/BaekjoonHub)를 통해 자동으로 업로드합니다.
 - 직접 작성하는 해설은 각 문제 폴더의 `NOTES.md`에 기록합니다.
 - 아래 목록과 통계는 GitHub Actions가 자동으로 갱신합니다.
 
@@ -12,7 +12,7 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 
 학습 과정에서 설명할 가치가 있는 풀이를 선택해 이곳에 링크를 추가합니다.
 
-## 출처
+## 플랫폼
 
 - [Programmers](https://school.programmers.co.kr/learn/challenges)
 - [SW Expert Academy](https://swexpertacademy.com/main/code/problem/problemList.do)
