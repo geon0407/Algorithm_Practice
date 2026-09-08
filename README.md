@@ -9,10 +9,6 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 - 직접 작성한 해설은 각 문제 폴더의 `NOTES.md`에 기록합니다.
 - 아래 목록과 통계는 GitHub Actions가 자동으로 갱신합니다.
 
-## 대표 풀이
-
-학습 과정에서 설명할 가치가 있는 풀이를 선택해 이곳에 링크를 추가합니다.
-
 ## 플랫폼
 
 - [Programmers](https://school.programmers.co.kr/learn/challenges)
