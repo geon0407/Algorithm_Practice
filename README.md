@@ -1,2 +1,2 @@
-# Programmers-Practice
-프로그래머스 문제 풀이 및 알고리즘 학습 기록
+# Algorithm_Practice
+알고리즘 문제 풀이 및 학습 기록
