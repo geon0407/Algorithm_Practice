@@ -2,9 +2,9 @@
 
 알고리즘 문제 풀이 및 학습 기록
 
-Programmers와 SWEA의 정답 코드를 기록하고, 핵심 아이디어와 개선 과정을 정리합니다.
+Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정을 기록합니다.
 
-- 코드와 문제별 README는 BaekjoonHub로 업로드합니다.
+- 코드와 문제별 README는 BaekjoonHub를 통해 자동으로 업로드합니다.
 - 직접 작성하는 해설은 각 문제 폴더의 `NOTES.md`에 기록합니다.
 - 아래 목록과 통계는 GitHub Actions가 자동으로 갱신합니다.
 
@@ -14,7 +14,7 @@ Programmers와 SWEA의 정답 코드를 기록하고, 핵심 아이디어와 개
 
 ## 출처
 
-- [프로그래머스 코딩 테스트 연습](https://school.programmers.co.kr/learn/challenges)
+- [Programmers](https://school.programmers.co.kr/learn/challenges)
 - [SW Expert Academy](https://swexpertacademy.com/main/code/problem/problemList.do)
 
 문제별 출처와 원문 링크는 각 문제 폴더의 README에서 확인할 수 있습니다.
