@@ -3,7 +3,7 @@
 <!-- AUTO-STATS:START -->
 [← BOJ 목록](../README.md) · [전체 현황](../../README.md)
 
-**45문제**
+**51문제**
 
 | 번호 | 문제 | 코드 | 해설 |
 | ---: | --- | --- | --- |
@@ -52,4 +52,10 @@
 | 11724 | [연결 요소의 개수](11724.%EC%97%B0%EA%B2%B0%20%EC%9A%94%EC%86%8C%EC%9D%98%20%EA%B0%9C%EC%88%98/) | [C++](11724.%EC%97%B0%EA%B2%B0%20%EC%9A%94%EC%86%8C%EC%9D%98%20%EA%B0%9C%EC%88%98/%EC%97%B0%EA%B2%B0%20%EC%9A%94%EC%86%8C%EC%9D%98%20%EA%B0%9C%EC%88%98.cpp) | — |
 | 11726 | [2×n 타일링](11726.2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81/) | [C++](11726.2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81/2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81.cpp) | — |
 | 11727 | [2×n 타일링 2](11727.2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81%202/) | [C++](11727.2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81%202/2%C3%97n%20%ED%83%80%EC%9D%BC%EB%A7%81%202.cpp) | — |
+| 11866 | [요세푸스 문제 0](11866.%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4%20%EB%AC%B8%EC%A0%9C%200/) | [C++](11866.%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4%20%EB%AC%B8%EC%A0%9C%200/%EC%9A%94%EC%84%B8%ED%91%B8%EC%8A%A4%20%EB%AC%B8%EC%A0%9C%200.cpp) | — |
+| 14594 | [동방 프로젝트 (Small)](14594.%EB%8F%99%EB%B0%A9%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%28Small%29/) | [C++](14594.%EB%8F%99%EB%B0%A9%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%28Small%29/%EB%8F%99%EB%B0%A9%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%28Small%29.cpp) | — |
+| 17219 | [비밀번호 찾기](17219.%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EC%B0%BE%EA%B8%B0/) | [C++](17219.%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EC%B0%BE%EA%B8%B0/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%20%EC%B0%BE%EA%B8%B0.cpp) | — |
+| 17626 | [Four Squares](17626.Four%20Squares/) | [C++](17626.Four%20Squares/Four%20Squares.cpp) | — |
+| 18110 | [solved.ac](18110.solved.ac/) | [C++](18110.solved.ac/solved.ac.cpp) | — |
+| 18870 | [좌표 압축](18870.%EC%A2%8C%ED%91%9C%20%EC%95%95%EC%B6%95/) | [C++](18870.%EC%A2%8C%ED%91%9C%20%EC%95%95%EC%B6%95/%EC%A2%8C%ED%91%9C%20%EC%95%95%EC%B6%95.cpp) | — |
 <!-- AUTO-STATS:END -->
