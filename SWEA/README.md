@@ -7,6 +7,6 @@
 
 | 난이도 | 문제 수 |
 | --- | ---: |
-| [D1](D1/README.md) | 1 |
 | [D3](D3/README.md) | 1 |
+| [D1](D1/README.md) | 1 |
 <!-- AUTO-STATS:END -->

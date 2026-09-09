@@ -24,20 +24,20 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 
 | 플랫폼 | 문제 수 | 목록 |
 | --- | ---: | --- |
-| BOJ | 105 | [난이도 목록](BOJ/README.md) |
 | Programmers | 6 | [난이도 목록](Programmers/README.md) |
 | SWEA | 2 | [난이도 목록](SWEA/README.md) |
+| BOJ | 105 | [난이도 목록](BOJ/README.md) |
 
 ### 난이도별 바로가기
 
 | 플랫폼 | 난이도 | 문제 수 |
 | --- | --- | ---: |
-| BOJ | [Bronze](BOJ/Bronze/README.md) | 48 |
-| BOJ | [Silver](BOJ/Silver/README.md) | 51 |
-| BOJ | [Gold](BOJ/Gold/README.md) | 5 |
-| BOJ | [Diamond](BOJ/Diamond/README.md) | 1 |
-| Programmers | [Lv. 0](Programmers/0/README.md) | 2 |
 | Programmers | [Lv. 1](Programmers/1/README.md) | 4 |
-| SWEA | [D1](SWEA/D1/README.md) | 1 |
+| Programmers | [Lv. 0](Programmers/0/README.md) | 2 |
 | SWEA | [D3](SWEA/D3/README.md) | 1 |
+| SWEA | [D1](SWEA/D1/README.md) | 1 |
+| BOJ | [Diamond](BOJ/Diamond/README.md) | 1 |
+| BOJ | [Gold](BOJ/Gold/README.md) | 5 |
+| BOJ | [Silver](BOJ/Silver/README.md) | 51 |
+| BOJ | [Bronze](BOJ/Bronze/README.md) | 48 |
 <!-- AUTO-STATS:END -->
