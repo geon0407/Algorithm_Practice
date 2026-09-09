@@ -8,6 +8,14 @@ START = '<!-- AUTO-STATS:START -->'
 END = '<!-- AUTO-STATS:END -->'
 LANG = {'.cpp': 'C++', '.cc': 'C++', '.c': 'C', '.py': 'Python', '.java': 'Java', '.js': 'JavaScript', '.ts': 'TypeScript', '.sql': 'SQL', '.cs': 'C#', '.go': 'Go', '.rs': 'Rust', '.swift': 'Swift', '.kt': 'Kotlin', '.rb': 'Ruby'}
 PLATFORMS = {'Programmers': 'Programmers', '프로그래머스': 'Programmers', 'SWEA': 'SWEA', '백준': 'BOJ', 'BOJ': 'BOJ'}
+PLATFORM_ORDER = {'Programmers': 0, 'SWEA': 1, 'BOJ': 2}
+
+
+def platform_folders(root):
+    folders = (folder for folder in root.iterdir()
+               if folder.name in PLATFORMS and folder.is_dir())
+    return sorted(folders,
+                  key=lambda folder: (PLATFORM_ORDER[PLATFORMS[folder.name]], folder.name))
 
 def label(text):
     return re.sub(r'\s+', ' ', text).strip().replace('|', '&#124;').replace('<', '&lt;').replace('>', '&gt;').replace('[', '&#91;').replace(']', '&#93;')
@@ -17,9 +25,7 @@ def link(path, root):
 
 def collect(root):
     records = {}
-    for folder in sorted(root.iterdir()):
-        if folder.name not in PLATFORMS or not folder.is_dir():
-            continue
+    for folder in platform_folders(root):
         platform = PLATFORMS[folder.name]
         for difficulty in sorted(folder.iterdir()):
             if not difficulty.is_dir():
@@ -74,9 +80,7 @@ def update(root):
     summary = ['## 풀이 현황', '', f'**총 {len(records)}문제** · 동일 플랫폼의 문제 번호 중복 제외', '',
                '| 플랫폼 | 문제 수 | 목록 |', '| --- | ---: | --- |']
     level_rows = ['', '### 난이도별 바로가기', '', '| 플랫폼 | 난이도 | 문제 수 |', '| --- | --- | ---: |']
-    for folder in sorted(root.iterdir()):
-        if folder.name not in PLATFORMS or not folder.is_dir():
-            continue
+    for folder in platform_folders(root):
         platform = PLATFORMS[folder.name]
         # A duplicate ID belongs to the folder containing its first indexed source.
         subset = [r for r in records if r['sources'][0].parent.parent.parent == folder]
@@ -84,7 +88,7 @@ def update(root):
         overview = [f'[← 전체 현황]({link(root / "README.md", folder)})', '', f'**{len(subset)}문제**', '',
                     '| 난이도 | 문제 수 |', '| --- | ---: |']
         difficulties = sorted((d for d in folder.iterdir() if d.is_dir()),
-                              key=lambda d: difficulty_key(d.name))
+                              key=lambda d: difficulty_key(d.name), reverse=True)
         for difficulty in difficulties:
             items = [r for r in subset if r['level'] == difficulty.name]
             # Refresh an existing generated page after its last solution is removed.
