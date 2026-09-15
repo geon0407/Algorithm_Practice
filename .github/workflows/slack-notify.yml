@@ -53,11 +53,11 @@ jobs:
               return match.group(1) if match else '—'
 
           def problem_blocks(title, platform, level, rate, language, time, memory, links):
-              return [section('*' + esc(title[:180]) + '*'),
+              return [section('*문제명 : ' + esc(title[:180]) + '*'),
                       section('*문제정보*'),
-                      fields([('플랫폼', platform), ('난이도', level), ('정답률', rate)]),
+                      fields([('🌐 플랫폼', platform), ('🏅 난이도', level), ('🎯 정답률', rate)]),
                       {'type': 'divider'}, section('*제출정보*'),
-                      fields([('언어', language), ('실행 시간', time), ('메모리', memory)]),
+                      fields([('💻 언어', language), ('⏱️ 실행 시간', time), ('💾 메모리', memory)]),
                       section(' · '.join(f'<{url}|{label}>' for url, label in links)),
                       {'type': 'divider'}]
 
