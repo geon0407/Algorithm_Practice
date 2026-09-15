@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Checkout the triggering commit
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v5 # Node.js 24
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -49,19 +49,19 @@ jobs:
 
           def fields(items):
               return {'type': 'section', 'fields': [
-                  {'type': 'plain_text', 'text': f'{label}\n{value}', 'emoji': True}
+                  {'type': 'plain_text', 'text': f'{label} : {value}', 'emoji': True}
                   for label, value in items]}
 
           def metric(readme, name, units):
               match = re.search(r'(?:^|[,\n])\s*' + name + r'\s*[:：]\s*([\d,.]+\s*(?:' + units + r'))', readme, re.I)
               return match.group(1) if match else '—'
 
-          def problem_blocks(title, platform, level, rate, language, time, memory, links):
-              return [heading('문제명 : ' + title, 2),
-                      heading('문제정보', 3),
-                      fields([('🌐 플랫폼', platform), ('🏅 난이도', level), ('🎯 정답률', rate)]),
+          def problem_blocks(title, platform, level, language, time, memory, links):
+              return [heading('문제정보', 3),
+                      fields([('📝 문제명', title), ('🌐 플랫폼', platform), ('🏅 난이도', level)]),
                       {'type': 'divider'}, heading('제출정보', 3),
                       fields([('💻 언어', language), ('⏱️ 실행 시간', time), ('💾 메모리', memory)]),
+                      {'type': 'divider'},
                       section(' · '.join(f'<{url}|{label}>' for url, label in links)),
                       {'type': 'divider'}]
 
@@ -73,9 +73,9 @@ jobs:
           blocks = [heading('🔔 Upload Complete 🔔' if is_test else '✅ Upload Complete ✅', 1)]
           if is_test:
               blocks.append({'type': 'context', 'elements': [{'type': 'plain_text', 'text': '연결 테스트 · 아래 제출정보는 예시 데이터입니다.'}]})
-              blocks.extend(problem_blocks('주식가격', 'Programmers', 'Lv. 2', '—', 'C++', '0.02 ms', '4.2 MB',
+              blocks.extend(problem_blocks('주식가격', 'Programmers', 'Lv. 2', 'C++', '0.02 ms', '4.2 MB',
                   [('https://school.programmers.co.kr/learn/courses/30/lessons/42584', '문제 보기'), (base, '저장소 보기')]))
-              text = '🔔 Upload Complete 🔔 · 연결 테스트 (예시 데이터)\n주식가격 · Programmers · Lv. 2\n정답률: — · 언어: C++ · 실행 시간: 0.02 ms · 메모리: 4.2 MB'
+              text = '🔔 Upload Complete 🔔 · 연결 테스트 (예시 데이터)\n문제명 : 주식가격 · 플랫폼 : Programmers · 난이도 : Lv. 2\n언어 : C++ · 실행 시간 : 0.02 ms · 메모리 : 4.2 MB'
           else:
               before, after = event['before'], event['after']
               if after == '0' * 40:
@@ -116,7 +116,6 @@ jobs:
                   readme = page.read_text(encoding='utf-8', errors='replace') if page.is_file() else ''
                   time = metric(readme, '시간', 'ms|μs|µs|us|s')
                   memory = metric(readme, '메모리', 'KB|MB|GB|Bytes|B')
-                  rate = metric(readme, '정답률', '%')
                   language = ', '.join(sorted(item['languages']))
                   if len(item['languages']) > 1:
                       time = memory = '—'
@@ -133,8 +132,8 @@ jobs:
                   if problem_url:
                       links.append((quote(problem_url, safe=':/?=&%#'), '문제 보기'))
                   links.append((base + '/commit/' + after, '커밋 보기'))
-                  blocks.extend(problem_blocks(title, platform, level, rate, language, time, memory, links))
-                  lines.append(esc(f'{platform} · {level} · {number}. {title[:180]}\n정답률: {rate} · 언어: {language} · 실행 시간: {time} · 메모리: {memory}'))
+                  blocks.extend(problem_blocks(title, platform, level, language, time, memory, links))
+                  lines.append(esc(f'문제명 : {title[:180]} · 플랫폼 : {platform} · 난이도 : {level} · {number}\n언어 : {language} · 실행 시간 : {time} · 메모리 : {memory}'))
               if len(problems) > 5:
                   more = f'외 {len(problems) - 5}개 문제 — <{base}/commit/{after}|커밋에서 확인하세요.>'
                   blocks.append(section(more))
