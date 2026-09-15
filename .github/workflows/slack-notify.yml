@@ -1,0 +1,101 @@
+name: Slack upload notification
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout the triggering commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Send upload notification or connection test
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          from pathlib import Path, PurePosixPath
+          from urllib.parse import quote, urlsplit
+          from urllib.request import Request, urlopen
+
+          def git(*args):
+              return subprocess.check_output(['git', *args])
+
+          def esc(value):
+              return value.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+          repo = os.environ['GITHUB_REPOSITORY']
+          base = os.environ['GITHUB_SERVER_URL'] + '/' + repo
+          run_url = base + '/actions/runs/' + os.environ['GITHUB_RUN_ID']
+          event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
+          if os.environ['GITHUB_EVENT_NAME'] == 'workflow_dispatch':
+              text = ':bell: Slack 알림 연결 테스트\n' + esc(repo) + '\nGitHub Actions에서 테스트 메시지를 보냈습니다.'
+          else:
+              before, after = event['before'], event['after']
+              if after == '0' * 40:
+                  sys.exit(0)
+              if before == '0' * 40:
+                  before = git('hash-object', '-t', 'tree', '/dev/null').decode().strip()
+              paths = git('diff', '--no-renames', '--name-only', '-z', '--diff-filter=AM', before, after, '--').decode().split('\0')
+              platforms = {'Programmers': 'Programmers', '프로그래머스': 'Programmers', 'SWEA': 'SWEA', 'BOJ': 'BOJ', '백준': 'BOJ'}
+              extensions = {'.cpp', '.cc', '.c', '.py', '.java', '.js', '.ts', '.sql', '.cs', '.go', '.rs', '.swift', '.kt', '.rb'}
+              problems = {}
+              for path in paths:
+                  p = PurePosixPath(path)
+                  if len(p.parts) != 4 or p.parts[0] not in platforms or p.suffix.lower() not in extensions:
+                      continue
+                  match = re.fullmatch(r'(\d+)\.(.+)', p.parts[2])
+                  if not match:
+                      continue
+                  number, title = match.groups()
+                  platform = platforms[p.parts[0]]
+                  level = p.parts[1]
+                  if platform == 'Programmers':
+                      level = 'Lv. ' + re.sub(r'(?i)^lv\.?\s*', '', level)
+                  key = (platform, int(number))
+                  problems[key] = (level, re.sub(r'\s+', ' ', title).strip(), p.parent.as_posix())
+              if not problems:
+                  print('No added or modified solution source files; no Slack message.')
+                  sys.exit(0)
+              lines = [':white_check_mark: 풀이 코드 업로드 완료', esc(repo) + ' · main', f'추가·수정된 문제: {len(problems)}개', '']
+              for (platform, number), (level, title, directory) in sorted(problems.items())[:15]:
+                  url = base + '/tree/' + after + '/' + quote(directory, safe='/')
+                  label = esc(f'{platform} · {level} · {number}. {title}'[:180]).replace('|', '｜')
+                  lines.append(f'• <{url}|{label}>')
+              if len(problems) > 15:
+                  lines.append(f'외 {len(problems) - 15}개 문제 — 커밋에서 확인하세요.')
+              lines.append('\n<' + base + '/commit/' + after + '|커밋 보기>')
+              text = '\n'.join(lines)
+
+          text += '\n<' + run_url + '|알림 실행 기록>'
+          webhook = os.environ.get('SLACK_WEBHOOK_URL', '').strip()
+          parsed = urlsplit(webhook)
+          if parsed.scheme != 'https' or parsed.hostname != 'hooks.slack.com' or not parsed.path.startswith('/services/'):
+              sys.exit('Set a valid Slack Incoming Webhook in the SLACK_WEBHOOK_URL repository secret.')
+          payload = json.dumps({'text': text, 'unfurl_links': False, 'unfurl_media': False}, ensure_ascii=False).encode()
+          request = Request(webhook, data=payload, headers={'Content-Type': 'application/json'}, method='POST')
+          try:
+              with urlopen(request, timeout=20) as response:
+                  ok = response.status == 200 and response.read().strip() == b'ok'
+          except Exception:
+              sys.exit('Slack delivery failed. Check the webhook secret and channel access. No automatic retry to avoid duplicate messages.')
+          if not ok:
+              sys.exit('Slack did not confirm message delivery.')
+          print('Slack message delivered.')
+          PY
