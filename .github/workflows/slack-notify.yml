@@ -56,14 +56,25 @@ jobs:
               match = re.search(r'(?:^|[,\n])\s*' + name + r'\s*[:：]\s*([\d,.]+\s*(?:' + units + r'))', readme, re.I)
               return match.group(1) if match else '—'
 
-          def problem_blocks(title, platform, level, rate, language, time, memory, links):
-              return [heading('문제명 : ' + title, 2),
-                      heading('문제정보', 3),
-                      fields([('🌐 플랫폼', platform), ('🏅 난이도', level), ('🎯 정답률', rate)]),
-                      {'type': 'divider'}, heading('제출정보', 3),
-                      fields([('💻 언어', language), ('⏱️ 실행 시간', time), ('💾 메모리', memory)]),
-                      section(' · '.join(f'<{url}|{label}>' for url, label in links)),
-                      {'type': 'divider'}]
+          def problem_blocks(title, platform, level, language, time, memory, links):
+                return [
+                    heading('문제정보', 3),
+                    fields([
+                        ('📝 문제명', title),
+                        ('🌐 플랫폼', platform),
+                        ('🏅 난이도', level)
+                    ]),
+                    {'type': 'divider'},
+                    heading('제출정보', 3),
+                    fields([
+                        ('💻 언어', language),
+                        ('⏱️ 실행 시간', time),
+                        ('💾 메모리', memory)
+                    ]),
+                    {'type': 'divider'},
+                    section(' · '.join(f'<{url}|{label}>' for url, label in links)),
+                    {'type': 'divider'}
+                ]
 
           repo = os.environ['GITHUB_REPOSITORY']
           base = os.environ['GITHUB_SERVER_URL'] + '/' + repo
