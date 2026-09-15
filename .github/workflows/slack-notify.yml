@@ -40,12 +40,39 @@ jobs:
           def esc(value):
               return value.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
+          def section(value):
+              return {'type': 'section', 'text': {'type': 'mrkdwn', 'text': value}}
+
+          def fields(items):
+              return {'type': 'section', 'fields': [
+                  {'type': 'plain_text', 'text': f'{label}\n{value}', 'emoji': True}
+                  for label, value in items]}
+
+          def metric(readme, name, units):
+              match = re.search(r'(?:^|[,\n])\s*' + name + r'\s*[:：]\s*([\d,.]+\s*(?:' + units + r'))', readme, re.I)
+              return match.group(1) if match else '—'
+
+          def problem_blocks(title, platform, level, rate, language, time, memory, links):
+              return [section('*' + esc(title[:180]) + '*'),
+                      section('*문제정보*'),
+                      fields([('플랫폼', platform), ('난이도', level), ('정답률', rate)]),
+                      {'type': 'divider'}, section('*제출정보*'),
+                      fields([('언어', language), ('실행 시간', time), ('메모리', memory)]),
+                      section(' · '.join(f'<{url}|{label}>' for url, label in links)),
+                      {'type': 'divider'}]
+
           repo = os.environ['GITHUB_REPOSITORY']
           base = os.environ['GITHUB_SERVER_URL'] + '/' + repo
           run_url = base + '/actions/runs/' + os.environ['GITHUB_RUN_ID']
           event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
-          if os.environ['GITHUB_EVENT_NAME'] == 'workflow_dispatch':
-              text = ':bell: Slack 알림 연결 테스트\n' + esc(repo) + '\nGitHub Actions에서 테스트 메시지를 보냈습니다.'
+          is_test = os.environ['GITHUB_EVENT_NAME'] == 'workflow_dispatch'
+          blocks = [{'type': 'header', 'text': {'type': 'plain_text',
+                     'text': '🔔 Upload Complete 🔔' if is_test else '✅ Upload Complete ✅', 'emoji': True}}]
+          if is_test:
+              blocks.append({'type': 'context', 'elements': [{'type': 'plain_text', 'text': '연결 테스트 · 아래 제출정보는 예시 데이터입니다.'}]})
+              blocks.extend(problem_blocks('주식가격', 'Programmers', 'Lv. 2', '—', 'C++', '0.02 ms', '4.2 MB',
+                  [('https://school.programmers.co.kr/learn/courses/30/lessons/42584', '문제 보기'), (base, '저장소 보기')]))
+              text = '🔔 Upload Complete 🔔 · 연결 테스트 (예시 데이터)\n주식가격 · Programmers · Lv. 2\n정답률: — · 언어: C++ · 실행 시간: 0.02 ms · 메모리: 4.2 MB'
           else:
               before, after = event['before'], event['after']
               if after == '0' * 40:
@@ -55,6 +82,8 @@ jobs:
               paths = git('diff', '--no-renames', '--name-only', '-z', '--diff-filter=AM', before, after, '--').decode().split('\0')
               platforms = {'Programmers': 'Programmers', '프로그래머스': 'Programmers', 'SWEA': 'SWEA', 'BOJ': 'BOJ', '백준': 'BOJ'}
               extensions = {'.cpp', '.cc', '.c', '.py', '.java', '.js', '.ts', '.sql', '.cs', '.go', '.rs', '.swift', '.kt', '.rb'}
+              languages = dict(zip(['.cpp', '.cc', '.c', '.py', '.java', '.js', '.ts', '.sql', '.cs', '.go', '.rs', '.swift', '.kt', '.rb'],
+                                   ['C++', 'C++', 'C', 'Python', 'Java', 'JavaScript', 'TypeScript', 'SQL', 'C#', 'Go', 'Rust', 'Swift', 'Kotlin', 'Ruby']))
               problems = {}
               for path in paths:
                   p = PurePosixPath(path)
@@ -69,26 +98,54 @@ jobs:
                   if platform == 'Programmers':
                       level = 'Lv. ' + re.sub(r'(?i)^lv\.?\s*', '', level)
                   key = (platform, int(number))
-                  problems[key] = (level, re.sub(r'\s+', ' ', title).strip(), p.parent.as_posix())
+                  item = problems.setdefault(key, {'level': level, 'title': re.sub(r'\s+', ' ', title).strip(), 'directory': p.parent.as_posix(), 'languages': set()})
+                  item['languages'].add(languages[p.suffix.lower()])
               if not problems:
                   print('No added or modified solution source files; no Slack message.')
                   sys.exit(0)
-              lines = [':white_check_mark: 풀이 코드 업로드 완료', esc(repo) + ' · main', f'추가·수정된 문제: {len(problems)}개', '']
-              for (platform, number), (level, title, directory) in sorted(problems.items())[:15]:
+              lines = ['✅ Upload Complete ✅', esc(repo) + ' · main', f'추가·수정된 문제: {len(problems)}개', '']
+              if len(problems) > 1:
+                  blocks.append(section(f'추가·수정된 문제: *{len(problems)}개*'))
+              for (platform, number), item in sorted(problems.items())[:5]:
+                  level, title, directory = item['level'], item['title'], item['directory']
                   url = base + '/tree/' + after + '/' + quote(directory, safe='/')
-                  label = esc(f'{platform} · {level} · {number}. {title}'[:180]).replace('|', '｜')
-                  lines.append(f'• <{url}|{label}>')
-              if len(problems) > 15:
-                  lines.append(f'외 {len(problems) - 15}개 문제 — 커밋에서 확인하세요.')
+                  page = Path(directory) / 'README.md'
+                  readme = page.read_text(encoding='utf-8', errors='replace') if page.is_file() else ''
+                  time = metric(readme, '시간', 'ms|μs|µs|us|s')
+                  memory = metric(readme, '메모리', 'KB|MB|GB|Bytes|B')
+                  rate = metric(readme, '정답률', '%')
+                  language = ', '.join(sorted(item['languages']))
+                  if len(item['languages']) > 1:
+                      time = memory = '—'
+                  links = [(url, '코드 보기')]
+                  source = re.search(r'\[문제 링크\]\((https?://[^\s)]+)\)', readme)
+                  if source:
+                      problem_url = source.group(1)
+                  elif platform == 'Programmers':
+                      problem_url = f'https://school.programmers.co.kr/learn/courses/30/lessons/{number}'
+                  elif platform == 'BOJ':
+                      problem_url = f'https://www.acmicpc.net/problem/{number}'
+                  else:
+                      problem_url = None
+                  if problem_url:
+                      links.append((quote(problem_url, safe=':/?=&%#'), '문제 보기'))
+                  links.append((base + '/commit/' + after, '커밋 보기'))
+                  blocks.extend(problem_blocks(title, platform, level, rate, language, time, memory, links))
+                  lines.append(esc(f'{platform} · {level} · {number}. {title[:180]}\n정답률: {rate} · 언어: {language} · 실행 시간: {time} · 메모리: {memory}'))
+              if len(problems) > 5:
+                  more = f'외 {len(problems) - 5}개 문제 — <{base}/commit/{after}|커밋에서 확인하세요.>'
+                  blocks.append(section(more))
+                  lines.append(more)
               lines.append('\n<' + base + '/commit/' + after + '|커밋 보기>')
               text = '\n'.join(lines)
 
           text += '\n<' + run_url + '|알림 실행 기록>'
+          blocks.append({'type': 'context', 'elements': [{'type': 'mrkdwn', 'text': esc(repo) + ' · ' + esc(os.environ.get('GITHUB_REF_NAME', 'main')) + ' · <' + run_url + '|알림 실행 기록>'}]})
           webhook = os.environ.get('SLACK_WEBHOOK_URL', '').strip()
           parsed = urlsplit(webhook)
           if parsed.scheme != 'https' or parsed.hostname != 'hooks.slack.com' or not parsed.path.startswith('/services/'):
               sys.exit('Set a valid Slack Incoming Webhook in the SLACK_WEBHOOK_URL repository secret.')
-          payload = json.dumps({'text': text, 'unfurl_links': False, 'unfurl_media': False}, ensure_ascii=False).encode()
+          payload = json.dumps({'text': text, 'blocks': blocks, 'unfurl_links': False, 'unfurl_media': False}, ensure_ascii=False).encode()
           request = Request(webhook, data=payload, headers={'Content-Type': 'application/json'}, method='POST')
           try:
               with urlopen(request, timeout=20) as response:
