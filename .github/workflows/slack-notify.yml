@@ -43,6 +43,10 @@ jobs:
           def section(value):
               return {'type': 'section', 'text': {'type': 'mrkdwn', 'text': value}}
 
+          def heading(value, level):
+              return {'type': 'header', 'level': level,
+                      'text': {'type': 'plain_text', 'text': value[:150], 'emoji': True}}
+
           def fields(items):
               return {'type': 'section', 'fields': [
                   {'type': 'plain_text', 'text': f'{label}\n{value}', 'emoji': True}
@@ -53,10 +57,10 @@ jobs:
               return match.group(1) if match else '—'
 
           def problem_blocks(title, platform, level, rate, language, time, memory, links):
-              return [section('*문제명 : ' + esc(title[:180]) + '*'),
-                      section('*문제정보*'),
+              return [heading('문제명 : ' + title, 2),
+                      heading('문제정보', 3),
                       fields([('🌐 플랫폼', platform), ('🏅 난이도', level), ('🎯 정답률', rate)]),
-                      {'type': 'divider'}, section('*제출정보*'),
+                      {'type': 'divider'}, heading('제출정보', 3),
                       fields([('💻 언어', language), ('⏱️ 실행 시간', time), ('💾 메모리', memory)]),
                       section(' · '.join(f'<{url}|{label}>' for url, label in links)),
                       {'type': 'divider'}]
@@ -66,8 +70,7 @@ jobs:
           run_url = base + '/actions/runs/' + os.environ['GITHUB_RUN_ID']
           event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
           is_test = os.environ['GITHUB_EVENT_NAME'] == 'workflow_dispatch'
-          blocks = [{'type': 'header', 'text': {'type': 'plain_text',
-                     'text': '🔔 Upload Complete 🔔' if is_test else '✅ Upload Complete ✅', 'emoji': True}}]
+          blocks = [heading('🔔 Upload Complete 🔔' if is_test else '✅ Upload Complete ✅', 1)]
           if is_test:
               blocks.append({'type': 'context', 'elements': [{'type': 'plain_text', 'text': '연결 테스트 · 아래 제출정보는 예시 데이터입니다.'}]})
               blocks.extend(problem_blocks('주식가격', 'Programmers', 'Lv. 2', '—', 'C++', '0.02 ms', '4.2 MB',
