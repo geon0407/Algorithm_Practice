@@ -3,13 +3,14 @@
 <!-- AUTO-STATS:START -->
 [← BOJ 목록](../README.md) · [전체 현황](../../README.md)
 
-**48문제**
+**49문제**
 
 | 번호 | 문제 | 코드 | 해설 |
 | ---: | --- | --- | --- |
 | 1000 | [A+B](1000.A%2BB/) | [C++](1000.A%2BB/A%2BB.cpp) · [C++](1000.A%EF%BC%8BB/A%EF%BC%8BB.cc) | — |
 | 1001 | [A-B](1001.A-B/) | [C++](1001.A-B/A-B.cpp) · [C++](1001.A%EF%BC%8DB/A%EF%BC%8DB.cc) | — |
-| 1008 | [A／B](1008.A%EF%BC%8FB/) | [C++](1008.A%EF%BC%8FB/A%EF%BC%8FB.cpp) | — |
+| 1008 | [A／B](1008.A%EF%BC%8FB/) | [C++](1008.A%EF%BC%8FB/A%EF%BC%8FB.cc) · [C++](1008.A%EF%BC%8FB/A%EF%BC%8FB.cpp) | — |
+| 1009 | [분산처리](1009.%EB%B6%84%EC%82%B0%EC%B2%98%EB%A6%AC/) | [C++](1009.%EB%B6%84%EC%82%B0%EC%B2%98%EB%A6%AC/%EB%B6%84%EC%82%B0%EC%B2%98%EB%A6%AC.cc) | — |
 | 1152 | [단어의 개수](1152.%EB%8B%A8%EC%96%B4%EC%9D%98%20%EA%B0%9C%EC%88%98/) | [C++](1152.%EB%8B%A8%EC%96%B4%EC%9D%98%20%EA%B0%9C%EC%88%98/%EB%8B%A8%EC%96%B4%EC%9D%98%20%EA%B0%9C%EC%88%98.cpp) | — |
 | 1259 | [팰린드롬수](1259.%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98/) | [C++](1259.%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98/%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98.cpp) | — |
 | 1330 | [두 수 비교하기](1330.%EB%91%90%20%EC%88%98%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/) | [C++](1330.%EB%91%90%20%EC%88%98%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/%EB%91%90%20%EC%88%98%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0.cpp) | — |
