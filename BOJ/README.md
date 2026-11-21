@@ -3,13 +3,13 @@
 <!-- AUTO-STATS:START -->
 [← 전체 현황](../README.md)
 
-**144문제**
+**145문제**
 
 | 난이도 | 문제 수 |
 | --- | ---: |
 | [Diamond](Diamond/README.md) | 1 |
 | [Platinum](Platinum/README.md) | 3 |
 | [Gold](Gold/README.md) | 13 |
-| [Silver](Silver/README.md) | 66 |
+| [Silver](Silver/README.md) | 67 |
 | [Bronze](Bronze/README.md) | 61 |
 <!-- AUTO-STATS:END -->
