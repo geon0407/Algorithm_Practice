@@ -1,107 +1,94 @@
-#include <cstdio>
-#include <iostream>
-#include <algorithm>
-#include <cstring>
-#include <string>
-#include <set>
-#include <map>
-#include <queue>
-#include <stack>
-#include <utility>
-#include <cmath>
-#include <cassert>
-#include <functional>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-typedef unsigned long long ull;
-typedef double db;
-typedef long double ldb;
-typedef vector<pair<int,int> > vii;
-typedef vector<pair<ll,int> > vli;
-typedef vector<pair<ll,ll> > vll;
-typedef vector<pair<db,db> > vdd;
-typedef pair<int,int> pii;
-typedef pair<ll,ll> pll;
+using pii = pair<int, int>;
 
-#define mp make_pair
-#define pb(x) push_back(x)
-#define sz(x) ((int)(x).size())
-#define all(x) (x).begin(),(x).end()
+const int INF = 1000000000;
 
-const ll MOD = 1000000007;
-const int INF = 0x3f3f3f3f;
-const ll LLINF = 1e18;
-const db PI = acos(-1);
-
-vector<vii> adj;
-int n,m;
+int n, m;
+vector<vector<pii>> adj;
 vector<int> parent;
 
-int dijkstra(int a, int b){
+int dijkstra(int a, int b);
 
-    parent[1]=1;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-    vector<int> DIST(n+1,1e9);
-    DIST[1]=0;
+    cin >> n >> m;
 
-    priority_queue<pii> q;
-    q.push(mp(0,1));
+    adj.resize(n+1);
+    parent.resize(n+1, -1);
 
-    while(!q.empty()){
+    for(int i=0;i<m;i++) {
+        int a, b, c;
+        cin >> a >> b >> c;
 
-        int dist = -q.top().first;
-        int here = q.top().second; q.pop();
+        adj[a].push_back({b, c});
+        adj[b].push_back({a, c});
+    }
 
-        for(int i=0;i<adj[here].size();i++){
-            int next = adj[here][i].first;
-            
-            if(here==a&&next==b) continue;
-            if(here==b&&next==a) continue;
+    int dist = dijkstra(0, 0);
+    if(dist == -1) {
+        cout << -1;
+        return 0;
+    }
 
-            int cost = adj[here][i].second+dist;
+    int answer = 0;
+    for(int p=n;p!=parent[p];p=parent[p]) {
+        int tmp = dijkstra(p, parent[p]);
 
-            if(DIST[next]>cost){
-                if(a==0) parent[next]=here;
-                DIST[next]=cost;
-                q.push(mp(-cost,next));
+        if(tmp == -1) {
+            answer = -1;
+            break;
+        }
+
+        answer = max(answer, tmp-dist);
+    }
+
+    cout << answer;
+
+    return 0;
+}
+
+int dijkstra(int a, int b)
+{
+    vector<int> dist(n+1, INF);
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
+
+    dist[1] = 0;
+    if(a == 0) {
+        parent[1] = 1;
+    }
+    pq.push({0, 1});
+
+    while(!pq.empty()) {
+        auto [cost, cur] = pq.top();
+        pq.pop();
+
+        if(cost > dist[cur]) {
+            continue;
+        }
+
+        for(auto [next, weight] : adj[cur]) {
+            if((cur == a && next == b) ||
+               (cur == b && next == a)) {
+                continue;
+            }
+
+            int nextCost = cost + weight;
+            if(nextCost < dist[next]) {
+                dist[next] = nextCost;
+
+                if(a == 0) {
+                    parent[next] = cur;
+                }
+
+                pq.push({nextCost, next});
             }
         }
     }
 
-    return DIST[n]==1e9?-1:DIST[n];
-}
-
-int main(){
-
-    std::ios::sync_with_stdio(false);
-
-    scanf("%d %d",&n,&m);
-
-    adj.resize(n+1);
-    parent.resize(n+1,-1);
-
-    int a,b,c;
-    while(m--){
-        scanf("%d %d %d",&a,&b,&c);
-        adj[a].pb(mp(b,c));
-        adj[b].pb(mp(a,c));
-    }
-
-    int dist = dijkstra(0,0);
-
-    int result=0;
-    for(int p=n;p!=parent[p];p=parent[p]){
-        int dd = dijkstra(p,parent[p]);
-        if(dd==-1){
-            result=-1;
-            break;
-        }
-        result = max(result,dd-dist);
-    }
-    printf("%d", result);
-
-    return 0;
+    return (dist[n] == INF) ? -1 : dist[n];
 }
