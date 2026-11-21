@@ -1,15 +1,28 @@
-# [Bronze V] A/B - 1008
+# [Bronze V] A/B - 1008 
 
-[문제 링크](https://www.acmicpc.net/problem/1008) · [solved.ac](https://solved.ac/problem/1008)
+[문제 링크](https://acmicpc.net/problem/1008) 
 
-## 가져온 기록
+### 성능 요약
 
-- 원본: `geon0407/BOJ-Practice` ZIP
-- 언어: C++
-- 난이도: solved.ac 조회 기준 **Bronze V**
-- 이 코드는 기존 풀이 아카이브에서 가져왔으며 이번 작업에서 재채점하지 않았습니다.
-- 실행 시간·메모리·정확한 제출 일자는 원본 자료에 없어 기재하지 않았습니다.
+메모리: 1116 KB, 시간: 0 ms
 
-> 출처: Baekjoon Online Judge, https://www.acmicpc.net/problem/1008
+### 분류
 
-[제목·난이도 확인 출처](https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved) · 확인일: 2026-09-08 (조회 페이지·검색 색인 기준)
+사칙연산, 구현, 수학
+
+### 제출 일자
+
+2018년 6월 5일 20:28:35
+
+### 문제 설명
+
+<p>두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오.</p>
+
+### 입력 
+
+ <p>첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)</p>
+
+### 출력 
+
+ <p>첫째 줄에 A/B를 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10<sup>-9</sup> 이하이면 정답이다.</p>
+
