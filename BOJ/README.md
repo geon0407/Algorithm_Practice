@@ -3,7 +3,7 @@
 <!-- AUTO-STATS:START -->
 [← 전체 현황](../README.md)
 
-**203문제**
+**204문제**
 
 | 난이도 | 문제 수 |
 | --- | ---: |
@@ -11,5 +11,5 @@
 | [Platinum](Platinum/README.md) | 10 |
 | [Gold](Gold/README.md) | 30 |
 | [Silver](Silver/README.md) | 81 |
-| [Bronze](Bronze/README.md) | 80 |
+| [Bronze](Bronze/README.md) | 81 |
 <!-- AUTO-STATS:END -->
