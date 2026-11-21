@@ -24,14 +24,19 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 
 | 플랫폼 | 문제 수 | 목록 |
 | --- | ---: | --- |
+| BOJ | 220 | [난이도 목록](BOJ/README.md) |
 | Programmers | 130 | [난이도 목록](Programmers/README.md) |
 | SWEA | 3 | [난이도 목록](SWEA/README.md) |
-| BOJ | 220 | [난이도 목록](BOJ/README.md) |
 
 ### 난이도별 바로가기
 
 | 플랫폼 | 난이도 | 문제 수 |
 | --- | --- | ---: |
+| BOJ | [Diamond](BOJ/Diamond/README.md) | 2 |
+| BOJ | [Platinum](BOJ/Platinum/README.md) | 10 |
+| BOJ | [Gold](BOJ/Gold/README.md) | 33 |
+| BOJ | [Silver](BOJ/Silver/README.md) | 85 |
+| BOJ | [Bronze](BOJ/Bronze/README.md) | 90 |
 | Programmers | [Lv. 5](Programmers/5/README.md) | 1 |
 | Programmers | [Lv. 2](Programmers/2/README.md) | 15 |
 | Programmers | [Lv. 1](Programmers/1/README.md) | 13 |
@@ -39,9 +44,4 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 | SWEA | [D3](SWEA/D3/README.md) | 1 |
 | SWEA | [D2](SWEA/D2/README.md) | 1 |
 | SWEA | [D1](SWEA/D1/README.md) | 1 |
-| BOJ | [Diamond](BOJ/Diamond/README.md) | 2 |
-| BOJ | [Platinum](BOJ/Platinum/README.md) | 10 |
-| BOJ | [Gold](BOJ/Gold/README.md) | 33 |
-| BOJ | [Silver](BOJ/Silver/README.md) | 85 |
-| BOJ | [Bronze](BOJ/Bronze/README.md) | 90 |
 <!-- AUTO-STATS:END -->
