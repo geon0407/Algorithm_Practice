@@ -8,7 +8,7 @@ START = '<!-- AUTO-STATS:START -->'
 END = '<!-- AUTO-STATS:END -->'
 LANG = {'.cpp': 'C++', '.cc': 'C++', '.c': 'C', '.py': 'Python', '.java': 'Java', '.js': 'JavaScript', '.ts': 'TypeScript', '.sql': 'SQL', '.cs': 'C#', '.go': 'Go', '.rs': 'Rust', '.swift': 'Swift', '.kt': 'Kotlin', '.rb': 'Ruby'}
 PLATFORMS = {'Programmers': 'Programmers', '프로그래머스': 'Programmers', 'SWEA': 'SWEA', '백준': 'BOJ', 'BOJ': 'BOJ'}
-PLATFORM_ORDER = {'Programmers': 0, 'SWEA': 1, 'BOJ': 2}
+PLATFORM_ORDER = {'BOJ': 0, 'Programmers': 1, 'SWEA': 2}
 
 
 def platform_folders(root):
