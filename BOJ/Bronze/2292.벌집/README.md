@@ -1,15 +1,30 @@
-# [Bronze II] 벌집 - 2292
+# [Bronze II] 벌집 - 2292 
 
-[문제 링크](https://www.acmicpc.net/problem/2292) · [solved.ac](https://solved.ac/problem/2292)
+[문제 링크](https://acmicpc.net/problem/2292) 
 
-## 가져온 기록
+### 성능 요약
 
-- 원본: `geon0407/BOJ-Practice` ZIP
-- 언어: C++
-- 난이도: solved.ac 조회 기준 **Bronze II**
-- 이 코드는 기존 풀이 아카이브에서 가져왔으며 이번 작업에서 재채점하지 않았습니다.
-- 실행 시간·메모리·정확한 제출 일자는 원본 자료에 없어 기재하지 않았습니다.
+메모리: 1984 KB, 시간: 0 ms
 
-> 출처: Baekjoon Online Judge, https://www.acmicpc.net/problem/2292
+### 분류
 
-[제목·난이도 확인 출처](https://solved.ac/problems/level/4?direction=desc&page=1&sort=solved) · 확인일: 2026-09-08 (조회 페이지·검색 색인 기준)
+수학
+
+### 제출 일자
+
+2020년 7월 1일 14:42:58
+
+### 문제 설명
+
+<p style="text-align: center;"><img alt="" src="" style="height:397px; width:363px"></p>
+
+<p>위의 그림과 같이 육각형으로 이루어진 벌집이 있다. 그림에서 보는 바와 같이 중앙의 방 1부터 시작해서 이웃하는 방에 돌아가면서 1씩 증가하는 번호를 주소로 매길 수 있다. 숫자 N이 주어졌을 때, 벌집의 중앙 1에서 N번 방까지 최소 개수의 방을 지나서 갈 때 몇 개의 방을 지나가는지(시작과 끝을 포함하여)를 계산하는 프로그램을 작성하시오. 예를 들면, 13까지는 3개, 58까지는 5개를 지난다.</p>
+
+### 입력 
+
+ <p>첫째 줄에 N(1 ≤ N ≤ 1,000,000,000)이 주어진다.</p>
+
+### 출력 
+
+ <p>입력으로 주어진 방까지 최소 개수의 방을 지나서 갈 때 몇 개의 방을 지나는지 출력한다.</p>
+
