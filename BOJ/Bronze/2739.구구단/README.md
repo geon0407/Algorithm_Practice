@@ -1,15 +1,28 @@
-# [Bronze V] 구구단 - 2739
+# [Bronze V] 구구단 - 2739 
 
-[문제 링크](https://www.acmicpc.net/problem/2739) · [solved.ac](https://solved.ac/problem/2739)
+[문제 링크](https://acmicpc.net/problem/2739) 
 
-## 가져온 기록
+### 성능 요약
 
-- 원본: `geon0407/BOJ-Practice` ZIP
-- 언어: C++
-- 난이도: solved.ac 조회 기준 **Bronze V**
-- 이 코드는 기존 풀이 아카이브에서 가져왔으며 이번 작업에서 재채점하지 않았습니다.
-- 실행 시간·메모리·정확한 제출 일자는 원본 자료에 없어 기재하지 않았습니다.
+메모리: 944 KB, 시간: 0 ms
 
-> 출처: Baekjoon Online Judge, https://www.acmicpc.net/problem/2739
+### 분류
 
-[제목·난이도 확인 출처](https://solved.ac/problems/level/1?direction=desc&page=1&sort=solved) · 확인일: 2026-09-08 (조회 페이지·검색 색인 기준)
+구현, 수학
+
+### 제출 일자
+
+2016년 4월 2일 12:13:11
+
+### 문제 설명
+
+<p>N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.</p>
+
+### 입력 
+
+ <p>첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 9보다 작거나 같다.</p>
+
+### 출력 
+
+ <p>출력형식과 같게 N*1부터 N*9까지 출력한다.</p>
+
