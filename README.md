@@ -20,11 +20,11 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 <!-- AUTO-STATS:START -->
 ## 풀이 현황
 
-**총 358문제** · 동일 플랫폼의 문제 번호 중복 제외
+**총 359문제** · 동일 플랫폼의 문제 번호 중복 제외
 
 | 플랫폼 | 문제 수 | 목록 |
 | --- | ---: | --- |
-| BOJ | 225 | [난이도 목록](BOJ/README.md) |
+| BOJ | 226 | [난이도 목록](BOJ/README.md) |
 | Programmers | 130 | [난이도 목록](Programmers/README.md) |
 | SWEA | 3 | [난이도 목록](SWEA/README.md) |
 
@@ -33,7 +33,7 @@ Programmers와 SWEA 플랫폼에서 진행한 알고리즘 문제 풀이 과정�
 | 플랫폼 | 난이도 | 문제 수 |
 | --- | --- | ---: |
 | BOJ | [Diamond](BOJ/Diamond/README.md) | 2 |
-| BOJ | [Platinum](BOJ/Platinum/README.md) | 10 |
+| BOJ | [Platinum](BOJ/Platinum/README.md) | 11 |
 | BOJ | [Gold](BOJ/Gold/README.md) | 34 |
 | BOJ | [Silver](BOJ/Silver/README.md) | 87 |
 | BOJ | [Bronze](BOJ/Bronze/README.md) | 92 |
