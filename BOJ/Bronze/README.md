@@ -3,7 +3,7 @@
 <!-- AUTO-STATS:START -->
 [← BOJ 목록](../README.md) · [전체 현황](../../README.md)
 
-**93문제**
+**94문제**
 
 | 번호 | 문제 | 코드 | 해설 |
 | ---: | --- | --- | --- |
@@ -67,6 +67,7 @@
 | 2557 | [Hello World](2557.Hello%20World/) | [C++](2557.Hello%20World/Hello%20World.cpp) · [C++](2557.Hello%E2%80%85World/Hello%E2%80%85World.cc) | — |
 | 2558 | [A＋B － 2](2558.A%EF%BC%8BB%E2%80%85%EF%BC%8D%E2%80%852/) | [C++](2558.A%EF%BC%8BB%E2%80%85%EF%BC%8D%E2%80%852/A%EF%BC%8BB%E2%80%85%EF%BC%8D%E2%80%852.cc) | — |
 | 2562 | [최댓값](2562.%EC%B5%9C%EB%8C%93%EA%B0%92/) | [C++](2562.%EC%B5%9C%EB%8C%93%EA%B0%92/%EC%B5%9C%EB%8C%93%EA%B0%92.cc) · [C++](2562.%EC%B5%9C%EB%8C%93%EA%B0%92/%EC%B5%9C%EB%8C%93%EA%B0%92.cpp) | — |
+| 2566 | [최댓값](2566.%EC%B5%9C%EB%8C%93%EA%B0%92/) | [C++](2566.%EC%B5%9C%EB%8C%93%EA%B0%92/%EC%B5%9C%EB%8C%93%EA%B0%92.cc) | — |
 | 2577 | [숫자의 개수](2577.%EC%88%AB%EC%9E%90%EC%9D%98%20%EA%B0%9C%EC%88%98/) | [C++](2577.%EC%88%AB%EC%9E%90%EC%9D%98%20%EA%B0%9C%EC%88%98/%EC%88%AB%EC%9E%90%EC%9D%98%20%EA%B0%9C%EC%88%98.cpp) | — |
 | 2609 | [최대공약수와 최소공배수](2609.%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/) | [C++](2609.%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.cpp) | — |
 | 2675 | [문자열 반복](2675.%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5/) | [C++](2675.%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5.cpp) | — |
